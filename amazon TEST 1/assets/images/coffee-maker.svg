@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" fill="none">
+  <rect width="320" height="260" rx="16" fill="#F8FAFC"/>
+  <circle cx="160" cy="130" r="90" fill="#FEF9C3"/>
+  <!-- Coffee Maker Body -->
+  <rect x="98" y="54" width="116" height="154" rx="14" fill="#1E293B"/>
+  <rect x="110" y="66" width="92" height="32" rx="6" fill="#334155"/>
+  <!-- Carafe -->
+  <path d="M118 122 H194 L188 188 Q186 196 178 196 H134 Q126 196 124 188 Z" fill="#E2E8F0" fill-opacity="0.85" stroke="#94A3B8" stroke-width="3"/>
+  <!-- Coffee Liquid -->
+  <path d="M123 154 H189 L186 186 Q184 192 176 192 H136 Q128 192 126 186 Z" fill="#78350F"/>
+  <!-- Carafe Handle -->
+  <path d="M194 130 H212 V176 H190" stroke="#1E293B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="156" cy="82" r="6" fill="#FF9900"/>
+</svg>

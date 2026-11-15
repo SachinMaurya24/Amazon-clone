@@ -1,0 +1,56 @@
+/* Centralizing colors, typography, spacing, and UI tokens makes fixing UI bugs trivial */
+:root {
+    /* Core Brand Palette (from starter spec + extended Amazon design tokens) */
+    --primary-color: #131921;
+    --secondary-color: #232f3e;
+    --accent-color: #febd69;
+    --accent-hover: #f3a847;
+    --amazon-orange: #ff9900;
+    --button-yellow: #ffd814;
+    --button-yellow-hover: #f7ca00;
+    --button-orange: #ffa41c;
+    --background-color: #eaeded;
+    --surface-subtle: #f7fafa;
+    --text-color: #0f1111;
+    --text-muted: #565959;
+    --link-color: #007185;
+    --link-hover: #c7511f;
+    --deal-red: #cc0c39;
+    --success-green: #007600;
+    --prime-blue: #00a8e1;
+    --white: #ffffff;
+    --border-color: #d5d9d9;
+
+    /* Spacing Scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    /* Typography */
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.375rem;
+    --text-2xl: 1.75rem;
+    --text-3xl: 2.25rem;
+
+    /* Borders, Shadows & Transitions */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-pill: 999px;
+    --shadow-sm: 0 1px 3px rgba(15, 17, 17, 0.08);
+    --shadow-md: 0 4px 14px rgba(15, 17, 17, 0.1);
+    --shadow-lg: 0 10px 28px rgba(15, 17, 17, 0.16);
+    --focus-ring: 0 0 0 3px rgba(255, 153, 0, 0.45);
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Layout Constraints */
+    --container-max: 1500px;
+}

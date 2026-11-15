@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" fill="none">
+  <rect width="320" height="260" rx="16" fill="#F8FAFC"/>
+  <circle cx="160" cy="130" r="90" fill="#DCFCE7"/>
+  <!-- Watch Straps -->
+  <rect x="132" y="38" width="56" height="46" rx="8" fill="#334155"/>
+  <rect x="132" y="176" width="56" height="46" rx="8" fill="#334155"/>
+  <!-- Watch Case -->
+  <rect x="108" y="74" width="104" height="112" rx="24" fill="#0F172A" stroke="#94A3B8" stroke-width="4"/>
+  <!-- Crown button -->
+  <rect x="214" y="106" width="6" height="22" rx="3" fill="#FF9900"/>
+  <!-- Activity Rings -->
+  <circle cx="160" cy="130" r="32" stroke="#EF4444" stroke-width="6" stroke-dasharray="160 200" stroke-linecap="round"/>
+  <circle cx="160" cy="130" r="22" stroke="#22C55E" stroke-width="6" stroke-dasharray="110 150" stroke-linecap="round"/>
+  <circle cx="160" cy="130" r="12" stroke="#38BDF8" stroke-width="6" stroke-dasharray="60 90" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 56" fill="none">
+  <text x="8" y="36" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.8">amazon</text>
+  <text x="122" y="36" fill="#febd69" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="14">.clone</text>
+  <path d="M24 42 C52 54, 96 54, 126 41" stroke="#FF9900" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M121 37 L128 40.5 L123 47" stroke="#FF9900" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone — Shop Electronics, Computers, Gaming &amp; Home</title>
+    <!-- Modular CSS loading -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body id="top">
+    <!-- Sticky Header Wrapper: Primary Navbar + Secondary Category Navbar -->
+    <div class="site-header">
+        <!-- Primary Top Navigation Bar -->
+        <header class="main-header">
+            <div class="header-left">
+                <a href="#top" class="logo" id="brand-logo" aria-label="Amazon Clone Home">
+                    <img src="assets/images/logo.svg" alt="Amazon Clone">
+                </a>
+                <div class="delivery-location" title="Delivery location">
+                    <span class="location-icon" aria-hidden="true">📍</span>
+                    <div>
+                        <span class="location-label">Deliver to</span>
+                        <span class="location-city">New Delhi 110001</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar with Category Filter -->
+            <form class="search-bar" id="search-form" role="search">
+                <select class="search-category-select" id="search-category-select" aria-label="Search category">
+                    <option value="all">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Computers">Computers</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Home &amp; Kitchen">Home &amp; Kitchen</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search Amazon Clone for headphones, monitors, gaming gear..."
+                    autocomplete="off"
+                    aria-label="Search Amazon"
+                >
+                <button type="submit" aria-label="Search">
+                    <span aria-hidden="true">🔍</span>
+                    <span>Search</span>
+                </button>
+            </form>
+
+            <!-- Right Actions: Account, Orders & Cart -->
+            <div class="header-right">
+                <button type="button" class="nav-item hide-tablet" id="account-btn">
+                    <span class="nav-line-1">Hello, Sign in</span>
+                    <span class="nav-line-2">Account &amp; Lists</span>
+                </button>
+                <button type="button" class="nav-item hide-tablet" id="orders-btn">
+                    <span class="nav-line-1">Returns</span>
+                    <span class="nav-line-2">&amp; Orders</span>
+                </button>
+                <button type="button" class="cart" id="cart-toggle-btn" aria-label="Open shopping cart">
+                    <span class="cart-icon-wrapper" aria-hidden="true">🛒</span>
+                    <span id="cart-count-text">Cart (0)</span>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Secondary Category Navigation Menu -->
+        <nav class="sub-header" aria-label="Product Categories">
+            <ul class="category-nav" id="category-nav">
+                <li><button type="button" class="category-btn active" data-category="all">☰ All</button></li>
+                <li><button type="button" class="category-btn" data-category="deals">🔥 Today's Deals</button></li>
+                <li><button type="button" class="category-btn" data-category="Electronics">Electronics</button></li>
+                <li><button type="button" class="category-btn" data-category="Computers">Computers</button></li>
+                <li><button type="button" class="category-btn" data-category="Gaming">Gaming</button></li>
+                <li><button type="button" class="category-btn" data-category="Home &amp; Kitchen">Home &amp; Kitchen</button></li>
+                <li><button type="button" class="category-btn" data-category="Accessories">Accessories</button></li>
+            </ul>
+            <div class="sub-header-promo">⚡ Free Prime Delivery on eligible orders</div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner / Interactive Carousel -->
+        <section class="hero-banner" aria-label="Featured Promotions">
+            <button type="button" class="hero-nav-btn hero-prev" id="hero-prev" aria-label="Previous slide">❮</button>
+
+            <div class="hero-slides-wrapper">
+                <!-- Slide 1 -->
+                <article class="hero-slide active" data-slide="0">
+                    <div class="hero-content">
+                        <span class="hero-tag">⚡ Tech Week Specials</span>
+                        <h2>Welcome to Amazon Clone: Up to 35% Off Pro Audio &amp; Displays</h2>
+                        <p>Upgrade your workstation and studio with flagship wireless noise-canceling headphones, 4K UHD monitors, and ultra-fast NVMe storage.</p>
+                        <div class="hero-actions">
+                            <button type="button" class="btn-hero-primary" data-filter-category="Electronics">Shop Electronics</button>
+                            <button type="button" class="btn-hero-secondary" data-filter-category="deals">View Today's Deals</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-visual-card">
+                            <img src="assets/images/headphones.svg" alt="Wireless Headphones">
+                            <div class="hero-card-title">Studio ANC Wireless Headphones</div>
+                            <div class="hero-card-deal">Now $49.99 (Save 38%)</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Slide 2 -->
+                <article class="hero-slide" data-slide="1">
+                    <div class="hero-content">
+                        <span class="hero-tag">🎮 Pro Gaming Gear</span>
+                        <h2>Precision Esport Peripherals Built for Victory</h2>
+                        <p>Experience zero-latency wireless mice, hot-swappable mechanical keyboards with custom tactile switches, and ergonomic gaming chairs.</p>
+                        <div class="hero-actions">
+                            <button type="button" class="btn-hero-primary" data-filter-category="Gaming">Explore Gaming Gear</button>
+                            <button type="button" class="btn-hero-secondary" data-filter-category="Computers">Shop Computers</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-visual-card">
+                            <img src="assets/images/keyboard.svg" alt="Mechanical Keyboard">
+                            <div class="hero-card-title">RGB Mechanical Keyboard</div>
+                            <div class="hero-card-deal">Top Rated • 4.7 ★</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Slide 3 -->
+                <article class="hero-slide" data-slide="2">
+                    <div class="hero-content">
+                        <span class="hero-tag">☕ Smart Home &amp; Office</span>
+                        <h2>Everyday Essentials for Modern Living &amp; Remote Work</h2>
+                        <p>From programmable barista coffee makers and eye-care desk lamps to weatherproof commuter laptop backpacks.</p>
+                        <div class="hero-actions">
+                            <button type="button" class="btn-hero-primary" data-filter-category="Home &amp; Kitchen">Shop Home &amp; Kitchen</button>
+                            <button type="button" class="btn-hero-secondary" data-filter-category="Accessories">Browse Accessories</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-visual-card">
+                            <img src="assets/images/coffee-maker.svg" alt="Smart Coffee Maker">
+                            <div class="hero-card-title">Programmable Brew Station</div>
+                            <div class="hero-card-deal">Prime One-Day Delivery</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <button type="button" class="hero-nav-btn hero-next" id="hero-next" aria-label="Next slide">❯</button>
+
+            <div class="hero-indicators" id="hero-indicators" role="tablist" aria-label="Slide controls">
+                <button type="button" class="hero-dot active" data-slide-to="0" aria-label="Slide 1"></button>
+                <button type="button" class="hero-dot" data-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" class="hero-dot" data-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </section>
+
+        <!-- Value Proposition Strip -->
+        <section class="promo-strip" aria-label="Store Benefits">
+            <div class="promo-card">
+                <div class="promo-icon" aria-hidden="true">🚚</div>
+                <div class="promo-text">
+                    <h3>Fast Prime Shipping</h3>
+                    <p>Free same-day or next-day delivery</p>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-icon" aria-hidden="true">🛡️</div>
+                <div class="promo-text">
+                    <h3>100% Purchase Protection</h3>
+                    <p>30-day hassle-free returns</p>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-icon" aria-hidden="true">🏷️</div>
+                <div class="promo-text">
+                    <h3>Lightning Deals Daily</h3>
+                    <p>Exclusive member markdowns</p>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-icon" aria-hidden="true">💬</div>
+                <div class="promo-text">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Dedicated order assistance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter & Sort Bar + Responsive Product Grid -->
+        <section class="products-section" aria-label="Product Catalog">
+            <div class="products-toolbar">
+                <div class="results-summary" id="results-summary">
+                    Showing <strong>12</strong> products in <span class="results-category-highlight">All Categories</span>
+                </div>
+                <div class="toolbar-controls">
+                    <label class="prime-filter-label" for="prime-only-toggle">
+                        <input type="checkbox" id="prime-only-toggle">
+                        <span>✓ <span class="prime-badge-inline">prime</span> eligible only</span>
+                    </label>
+                    <div class="sort-control">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select" class="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="rating-desc">Avg. Customer Review</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Grid Container (Populated dynamically via js/main.js) -->
+            <div class="product-grid" id="product-container">
+                <!-- Products will be injected here via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Slide-Out Shopping Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h2>Your Shopping Cart</h2>
+            <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items-list" id="cart-items-list">
+            <!-- Dynamic Cart Items Injected via js/cart.js -->
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-subtotal-row">
+                <span>Subtotal (<span id="cart-subtotal-count">0 items</span>):</span>
+                <span class="cart-subtotal-amount" id="cart-subtotal-amount">$0.00</span>
+            </div>
+            <div class="cart-prime-note">✓ Your order qualifies for FREE Prime Delivery</div>
+            <button type="button" class="btn-checkout" id="checkout-btn">Proceed to Checkout</button>
+            <button type="button" class="btn-clear-cart" id="clear-cart-btn">Clear Cart</button>
+        </div>
+    </aside>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <!-- Standardized Footer -->
+    <footer class="site-footer">
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#top">About Amazon Clone</a></li>
+                    <li><a href="#top">Careers &amp; Culture</a></li>
+                    <li><a href="#top">Press Releases</a></li>
+                    <li><a href="#top">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#top">Sell on Amazon Clone</a></li>
+                    <li><a href="#top">Protect &amp; Build Your Brand</a></li>
+                    <li><a href="#top">Become an Affiliate</a></li>
+                    <li><a href="#top">Fulfillment by Amazon</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Amazon Payment Products</h4>
+                <ul>
+                    <li><a href="#top">Amazon Rewards Visa</a></li>
+                    <li><a href="#top">Amazon Store Card</a></li>
+                    <li><a href="#top">Shop with Points</a></li>
+                    <li><a href="#top">Reload Your Balance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="#top">Your Account</a></li>
+                    <li><a href="#top">Your Orders &amp; Returns</a></li>
+                    <li><a href="#top">Shipping Rates &amp; Policies</a></li>
+                    <li><a href="#top">Help &amp; Customer Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-brand">
+                <img src="assets/images/logo.svg" alt="Amazon Clone">
+            </div>
+            <div class="footer-legal-links">
+                <a href="#top">Conditions of Use</a>
+                <a href="#top">Privacy Notice</a>
+                <a href="#top">Consumer Health Data Privacy</a>
+                <a href="#top">Your Ads Privacy Choices</a>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Amazon Clone Frontend Demo. Built with modular HTML5, CSS3 Grid/Flexbox, and Vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Modular JS loading -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
