@@ -1,0 +1,15 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/amazon%20TEST%201",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/amazon%20TEST%201/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    }
+  ]
+}
